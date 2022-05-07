@@ -11,23 +11,28 @@
 
 <body>
     <h1>Create new account.</h1>
-    <form action="" method="post" class="flex">
-        <div class="border rounded-lg flex flex-col w-4-10 absolute" id="user-info" style="height: 80vh;">
-
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="" class="text-input">
-
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="" class="text-input">
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="" class="text-input">
-
-            <label for="phone-number">Phone number</label>
-            <input type="tel" name="phone_number" id="" class="text-input">
-
-            <label for="password">Password</label>
-            <input type="password" name="password" id="" class="text-input">
+    <form action="" method="post" class="">
+        <div class="border rounded-lg w-4-10 absolute" id="user-info" style="height: 80vh;">
+            <div class="input-block">
+                <label for="first-name" class="text-md">First name</label>
+                <input type="text" name="first-name" id="" class="text-input">
+            </div>
+            <div class="input-block">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="" class="text-input">
+            </div>
+            <div class="input-block">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" class="text-input">
+            </div>
+            <div class="input-block">
+                <label for="phone-number">Phone number</label>
+                <input type="tel" name="phone_number" id="" class="text-input">
+            </div>
+            <div class="input-block">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="" class="text-input">
+            </div>
         </div>
         <div class="form">
             <h3>Are you a resident or an officer?</h3>
