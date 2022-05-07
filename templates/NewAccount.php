@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="" method="post" class="grid cols-2">
+    <form action="" method="post" class="grid cols-2" style="justify-content: center;">
         <div class="border rounded-lg w-4-10 absolute" id="user-info" style="height: 95vh;">
             <div class="input-block center w-80percent">
                 <label for="first-name" class="text-md">First name</label>
@@ -58,7 +58,9 @@
                     <input type="text" name="officer-id" id="" class="text-input">
                 </div>
             </div>
-            <button type="submit" class="btn primary-btn long-btn">Create Account</button>
+            <div class="w-100percent flex" style="justify-content: center; margin-top: 10px;">
+                <button type="submit" class="btn primary-btn long-btn">Create Account</button>
+            </div>
         </div>
     </form>
 </body>

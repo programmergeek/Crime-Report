@@ -194,3 +194,7 @@ body{
 .bold{
     font-weight: 600;
 }
+
+.justify-center{
+    justify-content: center;
+}
