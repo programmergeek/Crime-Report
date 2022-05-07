@@ -12,6 +12,14 @@ body{
     flex-direction: column;
 }
 
+.grid{
+    display: grid;
+}
+
+.cols-2{
+    grid-template-columns: 49vw auto;
+}
+
 .w-1-10{
     width: 10vw;
 }
