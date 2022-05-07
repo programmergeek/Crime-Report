@@ -24,12 +24,47 @@ body{
     width: 30vw;
 }
 
+.w-3_5-10{
+    width: 35vw;
+}
+
 .w-4-10{
     width: 40vw;
 }
 
 .w-5-10{
     width: 50vw;
+}
+
+.w-10percent{
+    width: 10%;
+}
+.w-20percent{
+    width: 20%;
+}
+.w-30percent{
+    width: 30%;
+}
+.w-40percent{
+    width: 40%;
+}
+.w-50percent{
+    width: 50%;
+}
+.w-60percent{
+    width: 60%;
+}
+.w-70percent{
+    width: 70%;
+}
+.w-80percent{
+    width: 80%;
+}
+.w-90percent{
+    width: 90%;
+}
+.w-100percent{
+    width: 100%;
 }
 
 .border {
@@ -49,7 +84,6 @@ body{
 }
 
 .input-block{
-    width: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -59,8 +93,7 @@ body{
     margin-left: 10px;
 }
 
-.input-block{
-    width: 80%;
+.center{
     margin-left: auto; 
     margin-right: auto;
 }
@@ -81,6 +114,71 @@ body{
     font-size: 16px;
 }
 
-.center{
+.flex-center{
     justify-content: center;
+}
+
+.p-sm{
+    padding: 10px;
+}
+
+.p-md{
+    padding: 20px;
+}
+
+.p-lg{
+    padding: 35px;
+}
+
+.p-l-sm{
+    padding-left: 10px;
+}
+
+.p-l-md{
+    padding-left: 20px;
+}
+
+.p-l-lg{
+    padding-left: 35px;
+}
+
+.p-b-sm{
+    padding-bottom: 10px;
+}
+
+.p-b-md{
+    padding-bottom: 20px;
+}
+
+.p-b-lg{
+    padding-bottom: 35px;
+}
+
+.p-b-xl{
+    padding-bottom: 50px;
+}
+
+.btn{
+    border-radius: 999px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background-color: #27AE60;
+    color: white;
+    font-weight: 600;
+}
+
+.long-btn{
+    width: 30vw;
+}
+
+.bold{
+    font-weight: 600;
 }

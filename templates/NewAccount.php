@@ -10,39 +10,52 @@
 </head>
 
 <body>
-    <h1>Create new account.</h1>
-    <form action="" method="post" class="">
-        <div class="border rounded-lg w-4-10 absolute" id="user-info" style="height: 80vh;">
-            <div class="input-block">
+    <form action="" method="post" class="grid cols-2">
+        <div class="border rounded-lg w-4-10 absolute" id="user-info" style="height: 95vh;">
+            <div class="input-block center w-80percent">
                 <label for="first-name" class="text-md">First name</label>
                 <input type="text" name="first-name" id="" class="text-input">
             </div>
-            <div class="input-block">
+            <div class="input-block center w-80percent">
                 <label for="last-name">Last name</label>
                 <input type="text" name="last-name" id="" class="text-input">
             </div>
-            <div class="input-block">
+            <div class="input-block center w-80percent">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="" class="text-input">
             </div>
-            <div class="input-block">
+            <div class="input-block center w-80percent">
                 <label for="phone-number">Phone number</label>
                 <input type="tel" name="phone_number" id="" class="text-input">
             </div>
-            <div class="input-block">
+            <div class="input-block center w-80percent">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="" class="text-input">
             </div>
         </div>
-        <div class="form">
-            <h3>Are you a resident or an officer?</h3>
-            <input type="checkbox" name="resident" id="">
-            <label for="resident">Resident</label>
+        <div id="account-type" style="height: 30vh;">
+            <div class="border w-3-10 rounded-lg p-md p-l-lg p-b-xl">
+                <h2 class="bold">Are you a resident or an officer?</h2>
+                <div class="">
+                    <input type="checkbox" name="resident" id="">
+                    <label for="resident">Resident</label>
 
-            <input type="checkbox" name="officer" id="">
-            <label for="officer">Officer</label>
+                    <input type="checkbox" name="officer" id="">
+                    <label for="officer">Officer</label>
+                </div>
+
+                <div class="input-block w-90percent">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="" class="text-input">
+                </div>
+
+                <div class="input-block w-90percent">
+                    <label for="offer-id">Officer ID</label>
+                    <input type="text" name="officer-id" id="" class="text-input">
+                </div>
+            </div>
+            <button type="submit" class="btn primary-btn long-btn">Create Account</button>
         </div>
-        <input type="submit" class="btn primary-btn long-btn">
     </form>
 </body>
 
