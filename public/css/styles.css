@@ -20,6 +20,10 @@ body{
     grid-template-columns: 49vw auto;
 }
 
+.cols-2-auto{
+    grid-template-columns: auto auto;
+}
+
 .w-1-10{
     width: 10vw;
 }

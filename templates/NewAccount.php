@@ -36,12 +36,16 @@
         <div id="account-type" style="height: 30vh;">
             <div class="border w-3-10 rounded-lg p-md p-l-lg p-b-xl">
                 <h2 class="bold">Are you a resident or an officer?</h2>
-                <div class="">
-                    <input type="checkbox" name="resident" id="">
-                    <label for="resident">Resident</label>
+                <div class="grid cols-2-auto">
+                    <div>
+                        <input type="checkbox" name="resident" id="">
+                        <label for="resident">Resident</label>
+                    </div>
 
-                    <input type="checkbox" name="officer" id="">
-                    <label for="officer">Officer</label>
+                    <div>
+                        <input type="checkbox" name="officer" id="">
+                        <label for="officer">Officer</label>
+                    </div>
                 </div>
 
                 <div class="input-block w-90percent">
