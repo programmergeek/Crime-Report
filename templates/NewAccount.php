@@ -1,3 +1,4 @@
+<?php include '../modules/SignupFormValidator.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="css/styles.css">
@@ -34,7 +35,7 @@
             </div>
             <div class="input-block center w-80percent">
                 <label for="profile_pic">Upload a profile picture</label>
-                <input type="file" name="" id="" class="image-input">
+                <input type="file" name="profile_pic" id="" class="image-input">
             </div>
         </div>
         <div id="account-type" style="height: 480px;">
@@ -64,7 +65,7 @@
             </div>
             <div class="w-100percent flex flex-col" style="justify-content: center; margin-top: 10px;">
                 <div class="flex justify-center">
-                    <button type="submit" class="btn primary-btn long-btn">Create Account</button>
+                    <button type="submit" name="submit" class="btn primary-btn long-btn">Create Account</button>
                 </div>
                 <a href="/login" class="flex justify-center" style="text-decoration: none;  width: 100%; margin-top: 15px;">
                     <div class="link" style="width: fit-content;">
