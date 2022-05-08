@@ -2,6 +2,8 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 99vh;
 }
 
 .flex{
@@ -197,4 +199,20 @@ body{
 
 .justify-center{
     justify-content: center;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.link{
+    color: #6FCF97;
+    text-decoration: none;
+    width: min-content;
+    margin-left: 1vw;
+    border-bottom: 1px solid #6FCF97;
 }
