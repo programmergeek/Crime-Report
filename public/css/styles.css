@@ -216,3 +216,7 @@ body{
     margin-left: 1vw;
     border-bottom: 1px solid #6FCF97;
 }
+
+.error-message{
+    margin: 0;
+}

@@ -15,23 +15,25 @@
         <div class="border rounded-lg w-4-10" id="user-info" style="height: 550px;">
             <div class="input-block center w-80percent">
                 <label for="first-name" class="text-md">First name</label>
-                <input type="text" name="first-name" id="" class="text-input">
+                <input type="text" name="first-name" id="first-name" class="text-input" maxlength="10" required>
             </div>
             <div class="input-block center w-80percent">
                 <label for="last-name">Last name</label>
-                <input type="text" name="last-name" id="" class="text-input">
+                <input type="text" name="last-name" id="first-name" class="text-input" maxlength="10" required>
             </div>
             <div class="input-block center w-80percent">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="" class="text-input">
+                <input type="email" name="email" id="email" class="text-input" maxlength="50" required>
+                <h6 class="error-message" id="email-error"></h6>
             </div>
             <div class="input-block center w-80percent">
                 <label for="phone-number">Phone number</label>
-                <input type="tel" name="phone_number" id="" class="text-input">
+                <input type="tel" name="phone_number" id="phone-number" class="text-input" maxlength="8" required>
+                <h6 class="error-message" id="phone-error"></h6>
             </div>
             <div class="input-block center w-80percent">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="" class="text-input">
+                <input type="password" name="password" id="password" class="text-input" maxlength="32" required>
             </div>
         </div>
         <div id="account-type" style="height: fit-content;">
@@ -40,7 +42,7 @@
 
                 <div class="input-block w-90percent">
                     <label for="address">Address</label>
-                    <input type="text" name="address" id="" class="text-input">
+                    <input type="text" name="address" id="" class="text-input" required>
                 </div>
 
             </div>
