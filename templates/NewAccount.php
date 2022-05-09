@@ -12,7 +12,7 @@
 
 <body>
     <form action="" method="post" class="grid cols-2" style="justify-content: center; align-items: center; height: 96vh;">
-        <div class="border rounded-lg w-4-10" id="user-info" style="height: 590px;">
+        <div class="border rounded-lg w-4-10" id="user-info" style="height: 550px;">
             <div class="input-block center w-80percent">
                 <label for="first-name" class="text-md">First name</label>
                 <input type="text" name="first-name" id="" class="text-input">
@@ -33,35 +33,16 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" id="" class="text-input">
             </div>
-            <div class="input-block center w-80percent">
-                <label for="profile_pic">Upload a profile picture</label>
-                <input type="file" name="profile_pic" id="" class="image-input">
-            </div>
         </div>
-        <div id="account-type" style="height: 480px;">
+        <div id="account-type" style="height: fit-content;">
             <div class="border w-3-10 rounded-lg p-md p-l-lg p-b-xl">
-                <h2 class="bold">Are you a resident or an officer?</h2>
-                <div class="grid cols-2-auto">
-                    <div>
-                        <input type="checkbox" name="resident" id="">
-                        <label for="resident">Resident</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" name="officer" id="">
-                        <label for="officer">Officer</label>
-                    </div>
-                </div>
+                <h2 class="bold">Where do you live?</h2>
 
                 <div class="input-block w-90percent">
                     <label for="address">Address</label>
                     <input type="text" name="address" id="" class="text-input">
                 </div>
 
-                <div class="input-block w-90percent">
-                    <label for="offer-id">Officer ID</label>
-                    <input type="text" name="officer-id" id="" class="text-input">
-                </div>
             </div>
             <div class="w-100percent flex flex-col" style="justify-content: center; margin-top: 10px;">
                 <div class="flex justify-center">
