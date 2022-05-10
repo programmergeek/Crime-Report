@@ -4,6 +4,7 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     height: 99vh;
+    background-color: whitesmoke;
 }
 
 .flex{
@@ -227,4 +228,8 @@ body{
     background-color: #C4C4C4;
     color: gray;
     cursor: not-allowed;
+}
+
+.bg-white{
+    background-color: white;
 }
