@@ -219,4 +219,12 @@ body{
 
 .error-message{
     margin: 0;
+    color: crimson;
+    margin-left: 5px;
+}
+
+.disabled{
+    background-color: #C4C4C4;
+    color: gray;
+    cursor: not-allowed;
 }

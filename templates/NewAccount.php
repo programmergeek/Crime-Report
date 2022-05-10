@@ -48,7 +48,7 @@
             </div>
             <div class="w-100percent flex flex-col" style="justify-content: center; margin-top: 10px;">
                 <div class="flex justify-center">
-                    <button type="submit" name="submit" class="btn primary-btn long-btn">Create Account</button>
+                    <button type="submit" name="submit" id="submit" class="btn primary-btn long-btn">Create Account</button>
                 </div>
                 <a href="/login" class="flex justify-center" style="text-decoration: none;  width: 100%; margin-top: 15px;">
                     <div class="link" style="width: fit-content;">
