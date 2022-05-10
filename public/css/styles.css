@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 99vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+}
+
+.cols-2{
+    grid-template-columns: 49vw auto;
+}
+
+.cols-2-auto{
+    grid-template-columns: auto auto;
+}
+
+.w-1-10{
+    width: 10vw;
+}
+
+.w-2-10{
+    width: 20vw;
+}
+
+.w-3-10{
+    width: 30vw;
+}
+
+.w-3_5-10{
+    width: 35vw;
+}
+
+.w-4-10{
+    width: 40vw;
+}
+
+.w-5-10{
+    width: 50vw;
+}
+
+.w-10percent{
+    width: 10%;
+}
+.w-20percent{
+    width: 20%;
+}
+.w-30percent{
+    width: 30%;
+}
+.w-40percent{
+    width: 40%;
+}
+.w-50percent{
+    width: 50%;
+}
+.w-60percent{
+    width: 60%;
+}
+.w-70percent{
+    width: 70%;
+}
+.w-80percent{
+    width: 80%;
+}
+.w-90percent{
+    width: 90%;
+}
+.w-100percent{
+    width: 100%;
+}
+
+.border {
+    border: 1px solid #E0E0E0;
+}
+
+.rounded-sm{
+    border-radius: 5px;
+}
+
+.rounded-md{
+    border-radius: 15px;
+}
+
+.rounded-lg{
+    border-radius: 25px;
+}
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.input-block > label{
+    margin-left: 10px;
+}
+
+.center{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.text-input{
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    height: 45px;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.text-input:focus{
+    outline: 2px solid #27AE60;
+}
+
+.text-md{
+    font-size: 16px;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.p-sm{
+    padding: 10px;
+}
+
+.p-md{
+    padding: 20px;
+}
+
+.p-lg{
+    padding: 35px;
+}
+
+.p-l-sm{
+    padding-left: 10px;
+}
+
+.p-l-md{
+    padding-left: 20px;
+}
+
+.p-l-lg{
+    padding-left: 35px;
+}
+
+.p-b-sm{
+    padding-bottom: 10px;
+}
+
+.p-b-md{
+    padding-bottom: 20px;
+}
+
+.p-b-lg{
+    padding-bottom: 35px;
+}
+
+.p-b-xl{
+    padding-bottom: 50px;
+}
+
+.btn{
+    border-radius: 999px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background-color: #27AE60;
+    color: white;
+    font-weight: 600;
+}
+
+.long-btn{
+    width: 30vw;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.link{
+    color: #6FCF97;
+    text-decoration: none;
+    width: min-content;
+    margin-left: 1vw;
+    border-bottom: 1px solid #6FCF97;
+}
+
+.error-message{
+    margin: 0;
+    color: crimson;
+    margin-left: 5px;
+}
+
+.disabled{
+    background-color: #C4C4C4;
+    color: gray;
+    cursor: not-allowed;
+}
