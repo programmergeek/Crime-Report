@@ -175,19 +175,32 @@ body{
 
 .btn{
     border-radius: 999px;
-    padding-top: 16px;
-    padding-bottom: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    min-width: 150px;
 }
 
 .primary-btn{
     background-color: #27AE60;
     color: white;
     font-weight: 600;
+}
+
+.secondary-btn{
+    background-color: whitesmoke;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.icon-btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
 .long-btn{
@@ -232,4 +245,17 @@ body{
 
 .bg-white{
     background-color: white;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-columns: 200px;
+
 }
