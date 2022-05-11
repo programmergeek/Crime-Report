@@ -36,6 +36,7 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crime;
     }
 
@@ -54,6 +55,7 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crime;
     }
 
@@ -73,6 +75,7 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crimes;
     }
 
@@ -94,6 +97,7 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crimes;
     }
 
@@ -115,6 +119,7 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crimes;
     }
     

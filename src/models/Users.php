@@ -18,6 +18,7 @@ class Users extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $users;
     }
     
