@@ -49,6 +49,10 @@
                     </div>
                 </div>
                 <div id="full-report" class="bg-white rounded-md" style="height: 87vh; width: 535px;">
+                    <h2 id="report-title" style="padding: 20px; margin-top: 10px; margin-bottom: 5px; padding-bottom: 5px;"></h2>
+                    <h5 id="date-time" style="margin-top: 5px; margin-bottom: 5px; color:gray; margin-left: 20px;"></h5>
+                    <p style="padding: 20px; padding-top: 5px; margin: 0;" id="description"></p>
+                    <h4 style="padding-left: 20px; margin-top: 5px;">Location</h4>
                     <div id="map" class="center"></div>
                 </div>
             </div>
