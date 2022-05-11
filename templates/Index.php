@@ -60,6 +60,7 @@
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFaRccGoN_KDZXuSRtO1PLvD51uWDZ1aA&callback=initMap&v=weekly" defer></script>
     <script src="js/maps.js"></script>
+    <script type="module" src="js/report.js"></script>
 </body>
 
 </html>
