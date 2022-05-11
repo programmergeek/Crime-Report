@@ -22,4 +22,13 @@ class Users extends Db_Connect {
         return $users;
     }
     
+    protected function addUser($userid, $fname, $lname, $email, $password, $phone_number, $area_id) {
+    	$conn = $this->connect();
+        $stmt = $conn->prepare("INSERT INTO users VALUES(" . $userid . ", ?, ?, ?, ?, ?, " . $area_id . ")");
+        $stmt->bind_param("sssss", $fname, $lname, $email, $password, $phone_number);
+        $stmt->execute();
+        
+        mysqli_close($conn);
+    }
+    
 }
