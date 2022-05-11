@@ -274,3 +274,9 @@ body{
     background-color: white;
     border-radius: 15px;
 }
+
+#map{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}

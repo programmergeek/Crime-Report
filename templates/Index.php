@@ -48,10 +48,14 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan orci eget urna vehicula, vitae aliquam felis luctus.</p>
                     </div>
                 </div>
-                <div id="full-report" class="bg-white rounded-md" style="height: 87vh; width: 535px;"></div>
+                <div id="full-report" class="bg-white rounded-md" style="height: 87vh; width: 535px;">
+                    <div id="map" class="center"></div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFaRccGoN_KDZXuSRtO1PLvD51uWDZ1aA&callback=initMap&v=weekly" defer></script>
+    <script src="js/maps.js"></script>
 </body>
 
 </html>
