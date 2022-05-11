@@ -10,7 +10,6 @@ class Reported_Crimes extends Db_Connect {
         
         $results = $conn->query($sql);
         
-
         if($results){
 		    while($row = $results->fetch_array(MYSQLI_ASSOC))
 			{
@@ -18,16 +17,18 @@ class Reported_Crimes extends Db_Connect {
 			}
         }
         
+        mysqli_close($conn);
         return $crime;
     }
     
     protected function getReportedCrimeByDate($date) {
-        $sql = "SELECT * FROM reported_crimes WHERE date = " . $date;
         $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE date = ?");
+        $stmt->bind_param('s', $date);
+        $stmt->execute();
         
-        $results = $conn->query($sql);
+        $results = $stmt->get_result();
         
-
         if($results){
 		    while($row = $results->fetch_array(MYSQLI_ASSOC))
 			{
@@ -39,12 +40,13 @@ class Reported_Crimes extends Db_Connect {
     }
 
     protected function getReportedCrimeByCrime($crime_name) {
-        $sql = "SELECT * FROM reported_crimes WHERE crime_name = " . $crime_name;
         $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE crime_name = ?");
+        $stmt->bind_param('s', $crime_name);
+        $stmt->execute();
         
-        $results = $conn->query($sql);
+        $results = $stmt->get_result();
         
-
         if($results){
 		    while($row = $results->fetch_array(MYSQLI_ASSOC))
 			{
@@ -74,11 +76,13 @@ class Reported_Crimes extends Db_Connect {
         return $crimes;
     }
 
-    protected function getAllReportedCrimesByDate($date) {
-        $sql = "SELECT * FROM reported_crimes WHERE date = " . $date;
+    protected function getAllReportedCrimeByDate($date) {
         $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE date = ?");
+        $stmt->bind_param('s', $date);
+        $stmt->execute();
         
-        $results = $conn->query($sql);
+        $results = $stmt->get_result();
         
 
         $crimes = array();
@@ -93,11 +97,13 @@ class Reported_Crimes extends Db_Connect {
         return $crimes;
     }
 
-    protected function getAllReportedCrimesByCrime($crime_name) {
-        $sql = "SELECT * FROM reported_crimes WHERE reportid = " . $crime_name;
+    protected function getAllReportedCrimeByCrime($crime_name) {
         $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE crime_name = ?");
+        $stmt->bind_param('s', $crime_name);
+        $stmt->execute();
         
-        $results = $conn->query($sql);
+        $results = $stmt->get_result();
         
 
         $crimes = array();
