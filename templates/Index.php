@@ -48,7 +48,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan orci eget urna vehicula, vitae aliquam felis luctus.</p>
                     </div>
                 </div>
-                <div id="full-report" class="bg-white rounded-md" style="height: 87vh; width: 535px;">
+                <div id="full-report" class="bg-white rounded-md" style="height: 87vh; width: 535px; overflow: auto;">
                     <h2 id="report-title" style="padding: 20px; margin-top: 10px; margin-bottom: 5px; padding-bottom: 5px;"></h2>
                     <h5 id="date-time" style="margin-top: 5px; margin-bottom: 5px; color:gray; margin-left: 20px;"></h5>
                     <p style="padding: 20px; padding-top: 5px; margin: 0;" id="description"></p>
@@ -58,9 +58,11 @@
             </div>
         </div>
     </div>
+    <div hidden id="lat"></div>
+    <div hidden id="long"></div>
+    <script type="module" src="js/report.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFaRccGoN_KDZXuSRtO1PLvD51uWDZ1aA&callback=initMap&v=weekly" defer></script>
     <script src="js/maps.js"></script>
-    <script type="module" src="js/report.js"></script>
 </body>
 
 </html>
