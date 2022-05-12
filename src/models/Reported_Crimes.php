@@ -59,8 +59,8 @@ class Reported_Crimes extends Db_Connect {
         return $crime;
     }
 
-    protected function getAllReportedCrime($reportid) {
-        $sql = "SELECT * FROM reported_crimes WHERE reportid = " . $reportid;
+    protected function getAllReportedCrime() {
+        $sql = "SELECT * FROM reported_crimes";
         $conn = $this->connect();
         
         $results = $conn->query($sql);
