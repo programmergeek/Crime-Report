@@ -54,6 +54,13 @@
                     <p style="padding: 20px; padding-top: 5px; margin: 0;" id="description"></p>
                     <h4 style="padding-left: 20px; margin-top: 5px;">Location</h4>
                     <div id="map" class="center"></div>
+                    <div id="comments">
+                        <form action="" method="post" class="p-md">
+                            <h4>Leave a comment</h4>
+                            <input type="text" name="comment" class="text-input w-90percent">
+                            <button type="submit" class="btn primary-btn" style="margin-top: 10px;">Post</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
