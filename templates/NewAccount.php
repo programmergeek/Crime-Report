@@ -12,7 +12,7 @@
 
 <body>
     <form action="" method="post" class="grid cols-2" style="justify-content: center; align-items: center; height: 96vh;">
-        <div class="border rounded-lg w-4-10" id="user-info" style="height: 550px;">
+        <div class="border rounded-lg w-4-10 bg-white" id="user-info" style="height: 550px;">
             <div class="input-block center w-80percent">
                 <label for="first-name" class="text-md">First name</label>
                 <input type="text" name="first-name" id="first-name" class="text-input" maxlength="10" required>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div id="account-type" style="height: fit-content;">
-            <div class="border w-3-10 rounded-lg p-md p-l-lg p-b-xl">
+            <div class="border w-3-10 rounded-lg p-md p-l-lg p-b-xl bg-white">
                 <h2 class="bold">Where do you live?</h2>
 
                 <div class="input-block w-90percent">
