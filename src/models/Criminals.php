@@ -21,6 +21,28 @@
                 return $criminals;
                 $conn->close();
             }
+            
+            
+            protected function getCriminal($criminal_id) {
+                $sql = "SELECT * FROM criminals WHERE criminal_id = ". $criminal_id;
+                $conn = $this->connect();
+                
+                $results = $conn->query($sql);
+                
+                $criminals = array();
+        
+                if($results){
+                    while($row = $results->fetch_array(MYSQLI_ASSOC))
+                    {
+                        $criminals[]=$row;
+                    }
+                }
+                
+                return $criminals;
+                $conn->close();
+            }
+            
+            
             protected function updateCriminals($sql){
                 $conn = $this->connect();
                 $results = $conn->query($sql);
