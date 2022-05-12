@@ -21,6 +21,10 @@
                 return $crimes;
                 $conn->close();
             }
+            
+
+           
+        
             protected function updateCrimes($sql){
                 $conn = $this->connect();
                 $results = $conn->query($sql);
