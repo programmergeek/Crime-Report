@@ -21,6 +21,27 @@ class Users extends Db_Connect {
         mysqli_close($conn);
         return $users;
     }
+
+    protected function getUserByEmailPassword($email, $password) {
+        $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
+        $stmt->bind_param('ss', $email, $password);
+        $stmt->execute();
+        
+
+        $results = $stmt->get_result();
+        
+        if($results){
+		    while($row = $results->fetch_array(MYSQLI_ASSOC))
+			{
+			    $user=$row;
+			}
+        }
+        
+        mysqli_close($conn);
+        return $user;
+    }
+
     
     protected function addUser($userid, $fname, $lname, $email, $password, $phone_number, $area_id) {
     	$conn = $this->connect();

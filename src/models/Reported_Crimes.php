@@ -123,4 +123,13 @@ class Reported_Crimes extends Db_Connect {
         return $crimes;
     }
     
+    public function addReportedCrime($reportid, $crime_name, $userid, $neighbourhood, $date, $time, $crime_description, $latitude, $longitude){
+    	$conn = $this->connect();
+        $stmt = $conn->prepare("INSERT INTO reported_crimes VALUES(" . $reportid . ", ?, " . $userid . ", ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param('sssssss', $crime_name, $neighbourhood, $date, $time, $crime_description, $latitude, $longitude);
+        $stmt->execute();
+        
+        mysqli_close($conn);
+    }
+    
 }
