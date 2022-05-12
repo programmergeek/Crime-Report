@@ -22,27 +22,9 @@
                 $conn->close();
             }
             
-            class Crimes extends Db_Connect{
-                protected function getCrime($crime) {
-                    $sql = "SELECT * FROM crimes WHERE crime = ". $crime;
-                    $conn = $this->connect();
-                    
-                    $results = $conn->query($sql);
-                    
-                    $crimes = array();
-            
-                    if($results){
-                        while($row = $results->fetch_array(MYSQLI_ASSOC))
-                        {
-                            $crimes[]=$row;
-                        }
-                    }
-                    
-                    return $crimes;
-                    $conn->close();
 
-            
-            
+           
+        
             protected function updateCrimes($sql){
                 $conn = $this->connect();
                 $results = $conn->query($sql);

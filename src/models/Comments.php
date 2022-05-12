@@ -54,6 +54,16 @@
                   $conn->close();
             }
         
+            public function addComment($report_id, $user_id, $comment, $media){
+                $conn = $this->connect();
+                $stmt = $conn->prepare("INSERT INTO comments VALUES(" . $report_id . $area_id . "?, ?," ")");
+                $stmt->bind_param("ss", $comment, $media);
+                $stmt->execute();
+            }
+        
+        
+        
+        
         }
     ?>
 </html>    
