@@ -22,8 +22,8 @@
                 $conn->close();
             }
             
-            protected function getComment($reportid) {
-                $sql = "SELECT * FROM comments WHERE reportid = ". $reportid;
+            protected function getComment_ByReportID($report_id) {
+                $sql = "SELECT * FROM comments WHERE reportid = ". $report_id;
                 $conn = $this->connect();
                 
                 $results = $conn->query($sql);
@@ -41,7 +41,25 @@
                 $conn->close();
             }
 
-
+            protected function getComment_ByUserID($user_id) {
+                $sql = "SELECT * FROM comments WHERE userid = ". $user_id;
+                $conn = $this->connect();
+                
+                $results = $conn->query($sql);
+                
+                $comments = array();
+        
+                if($results){
+                    while($row = $results->fetch_array(MYSQLI_ASSOC))
+                    {
+                        $comments[]=$row;
+                    }
+                }
+                
+                return $comments;
+                $conn->close();
+            }
+            
             protected function updateComments($sql){
                 $conn = $this->connect();
                 $results = $conn->query($sql);
