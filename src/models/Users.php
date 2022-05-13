@@ -4,6 +4,7 @@ include 'Db_connect.php';
 
 class Users extends Db_Connect {
     
+    //Returns an array containing the info about a single user whose userid is passed as an argument.
     protected function getUser($userid) {
         $sql = "SELECT * FROM users WHERE userid = " . $userid;
         $conn = $this->connect();
@@ -21,7 +22,8 @@ class Users extends Db_Connect {
         mysqli_close($conn);
         return $users;
     }
-
+    
+    //Returns a single user's info given an email and password, used in the login process.
     protected function getUserByEmailPassword($email, $password) {
         $conn = $this->connect();
         $stmt = $conn->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
@@ -42,7 +44,7 @@ class Users extends Db_Connect {
         return $user;
     }
 
-    
+    //Adds a new user to the database.
     protected function addUser($userid, $fname, $lname, $email, $password, $phone_number, $area_id) {
     	$conn = $this->connect();
         $stmt = $conn->prepare("INSERT INTO users VALUES(" . $userid . ", ?, ?, ?, ?, ?, " . $area_id . ")");

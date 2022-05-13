@@ -4,6 +4,7 @@ include 'Db_connect.php';
 
 class Reported_Crimes extends Db_Connect {
     
+    //Returns an array containing the info about a crime that was reported.
     protected function getReportedCrime($reportid) {
         $sql = "SELECT * FROM reported_crimes WHERE reportid = " . $reportid;
         $conn = $this->connect();
@@ -21,6 +22,7 @@ class Reported_Crimes extends Db_Connect {
         return $crime;
     }
     
+    //Returns an array containing the info about a crime that took place on a certain date.
     protected function getReportedCrimeByDate($date) {
         $conn = $this->connect();
         $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE date = ?");
@@ -39,7 +41,8 @@ class Reported_Crimes extends Db_Connect {
         mysqli_close($conn);
         return $crime;
     }
-
+    
+    //Returns an array containing the info about a crime based on the nature of said crime.
     protected function getReportedCrimeByCrime($crime_name) {
         $conn = $this->connect();
         $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE crime_name = ?");
@@ -58,7 +61,8 @@ class Reported_Crimes extends Db_Connect {
         mysqli_close($conn);
         return $crime;
     }
-
+    
+    //Returns an array of arrays containing every reported crime currently in the database.
     protected function getAllReportedCrime() {
         $sql = "SELECT * FROM reported_crimes";
         $conn = $this->connect();
@@ -78,7 +82,8 @@ class Reported_Crimes extends Db_Connect {
         mysqli_close($conn);
         return $crimes;
     }
-
+    
+    //Returns an array of arrays containing every reported crime the took place on a certain date.
     protected function getAllReportedCrimeByDate($date) {
         $conn = $this->connect();
         $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE date = ?");
@@ -100,7 +105,8 @@ class Reported_Crimes extends Db_Connect {
         mysqli_close($conn);
         return $crimes;
     }
-
+    
+    //Returns an array of arrays containing every reported crime of the same nature.
     protected function getAllReportedCrimeByCrime($crime_name) {
         $conn = $this->connect();
         $stmt = $conn->prepare("SELECT * FROM reported_crimes WHERE crime_name = ?");
@@ -123,6 +129,7 @@ class Reported_Crimes extends Db_Connect {
         return $crimes;
     }
     
+    //Adds a reported crime to the database.
     public function addReportedCrime($reportid, $crime_name, $userid, $neighbourhood, $date, $time, $crime_description, $latitude, $longitude){
     	$conn = $this->connect();
         $stmt = $conn->prepare("INSERT INTO reported_crimes VALUES(" . $reportid . ", ?, " . $userid . ", ?, ?, ?, ?, ?, ?)");
